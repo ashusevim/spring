@@ -1,0 +1,8 @@
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/controller/StudentController.java
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/dto/StudentRequestDTO.java
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/dto/StudentResponseDTO.java
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/model/Student.java
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/repository/StudentRepository.java
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/service/StudentService.java
+/home/wanony/ashusevim/challenges/05-dto-student/src/main/java/com/springarena/service/StudentServiceImpl.java

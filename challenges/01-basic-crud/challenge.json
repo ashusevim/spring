@@ -1,0 +1,14 @@
+{
+  "id": "01-basic-crud",
+  "title": "Basic CRUD — Product API",
+  "difficulty": "EASY",
+  "track": "CRUD Fundamentals",
+  "testCount": 8,
+  "description": "### Your Task\n\nBuild a complete REST API for managing Products.\n\n### Requirements\n\n- Create a `Product` entity with fields: `id` (Long, auto-generated), `name` (String), `description` (String), `price` (Double), `quantity` (Integer)\n- Create a `ProductRepository` extending `JpaRepository`\n- Create a `ProductController` at `/api/products` with these endpoints:\n\n### Endpoints\n\n- `GET /api/products` → Return all products (200 OK)\n- `GET /api/products/{id}` → Return product by ID (200 OK, or 404 if not found)\n- `POST /api/products` → Create product, return it (201 Created)\n- `PUT /api/products/{id}` → Update product (200 OK, or 404 if not found)\n- `DELETE /api/products/{id}` → Delete product (204 No Content, or 404 if not found)\n\n### Key Concepts\n\n- `@Entity`, `@Id`, `@GeneratedValue`\n- `@RestController`, `@RequestMapping`\n- `@GetMapping`, `@PostMapping`, `@PutMapping`, `@DeleteMapping`\n- `@PathVariable`, `@RequestBody`\n- `ResponseEntity` with proper HTTP status codes",
+  "hints": [
+    "Use @GeneratedValue(strategy = GenerationType.IDENTITY) for auto-incrementing IDs",
+    "ResponseEntity.status(HttpStatus.CREATED).body(savedProduct) returns 201",
+    "ResponseEntity.noContent().build() returns 204 with no body",
+    "Use repository.findById(id) which returns Optional<Product> — handle the empty case with 404"
+  ]
+}

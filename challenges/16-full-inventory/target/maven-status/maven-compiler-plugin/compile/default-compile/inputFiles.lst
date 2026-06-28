@@ -1,0 +1,8 @@
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/controller/InventoryController.java
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/dto/InventoryRequestDTO.java
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/dto/InventoryResponseDTO.java
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/model/InventoryItem.java
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/repository/InventoryRepository.java
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/service/InventoryService.java
+/home/wanony/ashusevim/challenges/16-full-inventory/src/main/java/com/springarena/service/InventoryServiceImpl.java

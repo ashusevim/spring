@@ -1,0 +1,8 @@
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/controller/VehicleController.java
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/dto/VehicleRequestDTO.java
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/dto/VehicleResponseDTO.java
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/model/Vehicle.java
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/repository/VehicleRepository.java
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/service/VehicleService.java
+/home/wanony/ashusevim/challenges/06-dto-vehicle/src/main/java/com/springarena/service/VehicleServiceImpl.java

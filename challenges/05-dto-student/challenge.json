@@ -1,0 +1,13 @@
+{
+  "id": "05-dto-student",
+  "title": "DTO Pattern — Student API",
+  "difficulty": "EASY",
+  "track": "DTO & Mapping",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild a Student CRUD API using the DTO pattern. Another rep to build muscle memory.\n\n### Requirements\n\n- `Student` entity: `id` (Long), `firstName` (String), `lastName` (String), `email` (String), `grade` (String), `gpa` (Double)\n- `StudentRequestDTO`: `firstName`, `lastName`, `email`, `grade`, `gpa`\n- `StudentResponseDTO`: `id`, `displayName` (grade + \" - \" + firstName + \" \" + lastName), `email`, `gpa`\n- `StudentController` at `/api/students`\n\n### Endpoints\n\n- `GET /api/students` → List of StudentResponseDTO (200)\n- `GET /api/students/{id}` → StudentResponseDTO (200 or 404)\n- `POST /api/students` → Accept StudentRequestDTO, return StudentResponseDTO (201)\n- `PUT /api/students/{id}` → Accept StudentRequestDTO, return StudentResponseDTO (200 or 404)\n- `DELETE /api/students/{id}` → 204 or 404\n\n### Key Concepts\n\n- Computed field: `displayName` = grade + \" - \" + firstName + \" \" + lastName\n- Example: grade=\"10th\", firstName=\"John\", lastName=\"Doe\" → displayName=\"10th - John Doe\"",
+  "hints": [
+    "displayName is computed during entity → response DTO mapping",
+    "The request DTO should NOT have id or displayName",
+    "Map manually: no need for MapStruct at this level"
+  ]
+}

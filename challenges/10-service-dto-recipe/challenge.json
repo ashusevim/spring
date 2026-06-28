@@ -1,0 +1,13 @@
+{
+  "id": "10-service-dto-recipe",
+  "title": "Service + DTO — Recipe API",
+  "difficulty": "EASY",
+  "track": "Service + DTO",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild a Recipe CRUD API combining **Service Layer** and **DTO Pattern** together.\n\n### Requirements\n\n- `Recipe` entity: `id` (Long), `title` (String), `description` (String), `cookingTime` (Integer, in minutes), `servings` (Integer), `difficulty` (String)\n- `RecipeRequestDTO`: `title`, `description`, `cookingTime`, `servings`, `difficulty`\n- `RecipeResponseDTO`: `id`, `title`, `description`, `cookingTime`, `servings`, `difficulty`\n- `RecipeRepository` extending `JpaRepository`\n- `RecipeService` — handles CRUD + DTO ↔ Entity mapping\n- `RecipeController` at `/api/recipes`\n\n### Endpoints\n\n- `GET /api/recipes` → List of RecipeResponseDTO (200)\n- `GET /api/recipes/{id}` → RecipeResponseDTO (200 or 404)\n- `POST /api/recipes` → Accept RecipeRequestDTO, return RecipeResponseDTO (201)\n- `PUT /api/recipes/{id}` → Accept RecipeRequestDTO, return RecipeResponseDTO (200 or 404)\n- `DELETE /api/recipes/{id}` → 204 or 404\n\n### Key Concepts\n\n- DTO mapping happens INSIDE the service layer\n- Controller accepts/returns DTOs\n- Service converts DTO → Entity for saving, Entity → DTO for returning",
+  "hints": [
+    "Put the mapping logic in the service, not the controller",
+    "Service methods should accept DTOs and return DTOs",
+    "Controller is thin — just delegates to service"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "11-service-dto-task",
+  "title": "Service + DTO — Task API",
+  "difficulty": "EASY",
+  "track": "Service + DTO",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild a Task/Todo CRUD API with Service + DTO pattern.\n\n### Requirements\n\n- `Task` entity: `id` (Long), `title` (String), `description` (String), `status` (String), `priority` (String), `dueDate` (String)\n- `TaskRequestDTO`: `title`, `description`, `status`, `priority`, `dueDate`\n- `TaskResponseDTO`: `id`, `title`, `description`, `status`, `priority`, `dueDate`\n- `TaskRepository`, `TaskService`, `TaskController` at `/api/tasks`\n\n### Endpoints\n\n- `GET /api/tasks` → List of TaskResponseDTO (200)\n- `GET /api/tasks/{id}` → TaskResponseDTO (200 or 404)\n- `POST /api/tasks` → Accept TaskRequestDTO, return TaskResponseDTO (201)\n- `PUT /api/tasks/{id}` → Accept TaskRequestDTO, return TaskResponseDTO (200 or 404)\n- `DELETE /api/tasks/{id}` → 204 or 404",
+  "hints": [
+    "Status and priority are just Strings — no enums needed",
+    "dueDate is also a String for simplicity",
+    "Same Service + DTO pattern as challenge 10"
+  ]
+}

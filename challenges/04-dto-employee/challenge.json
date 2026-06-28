@@ -1,0 +1,14 @@
+{
+  "id": "04-dto-employee",
+  "title": "DTO Pattern — Employee API",
+  "difficulty": "EASY",
+  "track": "DTO & Mapping",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild an Employee CRUD API using the **DTO pattern** — never expose entities directly.\n\n### Why DTOs?\n\nIn assessments and real projects, you should NEVER return JPA entities directly from controllers. DTOs (Data Transfer Objects) let you control what data goes in and out of your API.\n\n### Requirements\n\n- `Employee` entity: `id` (Long), `firstName` (String), `lastName` (String), `email` (String), `department` (String), `salary` (Double)\n- `EmployeeRequestDTO`: `firstName`, `lastName`, `email`, `department`, `salary` (no id — it's auto-generated)\n- `EmployeeResponseDTO`: `id`, `fullName` (firstName + \" \" + lastName), `email`, `department`, `salary`\n- `EmployeeController` at `/api/employees`\n\n### Endpoints\n\n- `GET /api/employees` → List of EmployeeResponseDTO (200)\n- `GET /api/employees/{id}` → EmployeeResponseDTO (200 or 404)\n- `POST /api/employees` → Accept EmployeeRequestDTO, return EmployeeResponseDTO (201)\n- `PUT /api/employees/{id}` → Accept EmployeeRequestDTO, return EmployeeResponseDTO (200 or 404)\n- `DELETE /api/employees/{id}` → 204 or 404\n\n### Key Concepts\n\n- Request DTO vs Response DTO\n- Entity ↔ DTO mapping (manual mapping in controller or helper method)\n- `fullName` is a computed field (not stored in DB)",
+  "hints": [
+    "Create simple POJOs for DTOs — no JPA annotations needed on them",
+    "Map EmployeeRequestDTO → Employee entity when saving",
+    "Map Employee entity → EmployeeResponseDTO when returning",
+    "fullName = firstName + ' ' + lastName — compute it during mapping"
+  ]
+}

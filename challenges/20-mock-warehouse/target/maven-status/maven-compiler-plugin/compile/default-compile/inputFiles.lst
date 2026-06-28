@@ -1,0 +1,8 @@
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/controller/StockItemController.java
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/dto/StockItemRequestDTO.java
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/dto/StockItemResponseDTO.java
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/model/StockItem.java
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/repository/StockItemRepository.java
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/service/StockItemService.java
+/home/wanony/ashusevim/challenges/20-mock-warehouse/src/main/java/com/springarena/service/StockItemServiceImpl.java

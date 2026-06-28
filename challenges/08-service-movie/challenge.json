@@ -1,0 +1,13 @@
+{
+  "id": "08-service-movie",
+  "title": "Service Layer — Movie API",
+  "difficulty": "EASY",
+  "track": "Service Layer",
+  "testCount": 8,
+  "description": "### Your Task\n\nBuild a Movie CRUD API with the 3-layer pattern: Controller → Service → Repository.\n\n### Requirements\n\n- `Movie` entity: `id` (Long), `title` (String), `director` (String), `year` (Integer), `rating` (Double), `genre` (String)\n- `MovieRepository` extending `JpaRepository`\n- `MovieService` with all CRUD methods\n- `MovieController` at `/api/movies`\n\n### Endpoints\n\n- `GET /api/movies` → Return all movies (200)\n- `GET /api/movies/{id}` → Return movie by ID (200 or 404)\n- `POST /api/movies` → Create movie (201)\n- `PUT /api/movies/{id}` → Update movie (200 or 404)\n- `DELETE /api/movies/{id}` → Delete movie (204 or 404)\n\n### Key Concepts\n\n- Same 3-layer pattern as Challenge 07\n- This should be faster — you've done it before!",
+  "hints": [
+    "@Service on MovieService",
+    "Constructor injection in both controller and service",
+    "Controller → Service → Repository (never skip the service)"
+  ]
+}

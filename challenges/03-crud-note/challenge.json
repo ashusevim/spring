@@ -1,0 +1,14 @@
+{
+  "id": "03-crud-note",
+  "title": "Basic CRUD — Note API",
+  "difficulty": "EASY",
+  "track": "CRUD Fundamentals",
+  "testCount": 8,
+  "description": "### Your Task\n\nBuild a complete REST API for managing Notes. One more rep of the CRUD pattern.\n\n### Requirements\n\n- Create a `Note` entity with fields: `id` (Long, auto-generated), `title` (String), `content` (String), `author` (String), `pinned` (Boolean)\n- Create a `NoteRepository` extending `JpaRepository`\n- Create a `NoteController` at `/api/notes` with CRUD endpoints\n\n### Endpoints\n\n- `GET /api/notes` → Return all notes (200 OK)\n- `GET /api/notes/{id}` → Return note by ID (200 OK, or 404 if not found)\n- `POST /api/notes` → Create note (201 Created)\n- `PUT /api/notes/{id}` → Update note (200 OK, or 404 if not found)\n- `DELETE /api/notes/{id}` → Delete note (204 No Content, or 404 if not found)\n\n### Key Concepts\n\n- Same pattern as Challenges 01 and 02\n- This should feel faster now — you know the drill!",
+  "hints": [
+    "By now you should know: @Entity, @Id, @GeneratedValue, @RestController",
+    "Don't forget @RequestBody on POST and PUT",
+    "Use ResponseEntity for full control over status codes",
+    "Boolean fields work just like any other field in JPA"
+  ]
+}

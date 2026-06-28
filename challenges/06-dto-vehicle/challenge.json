@@ -1,0 +1,13 @@
+{
+  "id": "06-dto-vehicle",
+  "title": "DTO Pattern — Vehicle API",
+  "difficulty": "EASY",
+  "track": "DTO & Mapping",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild a Vehicle CRUD API using the DTO pattern. More reps!\n\n### Requirements\n\n- `Vehicle` entity: `id` (Long), `make` (String), `model` (String), `year` (Integer), `color` (String), `price` (Double)\n- `VehicleRequestDTO`: `make`, `model`, `year`, `color`, `price`\n- `VehicleResponseDTO`: `id`, `label` (year + \" \" + make + \" \" + model), `color`, `price`\n- `VehicleController` at `/api/vehicles`\n\n### Endpoints\n\n- `GET /api/vehicles` → List of VehicleResponseDTO (200)\n- `GET /api/vehicles/{id}` → VehicleResponseDTO (200 or 404)\n- `POST /api/vehicles` → Accept VehicleRequestDTO, return VehicleResponseDTO (201)\n- `PUT /api/vehicles/{id}` → Accept VehicleRequestDTO, return VehicleResponseDTO (200 or 404)\n- `DELETE /api/vehicles/{id}` → 204 or 404\n\n### Key Concepts\n\n- Computed field: `label` = year + \" \" + make + \" \" + model\n- Example: year=2024, make=\"Toyota\", model=\"Camry\" → label=\"2024 Toyota Camry\"",
+  "hints": [
+    "label = year + ' ' + make + ' ' + model",
+    "Integer.toString(year) or String.valueOf(year) to convert year to string",
+    "Same pattern as challenges 04 and 05 — this should be faster now"
+  ]
+}

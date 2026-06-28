@@ -1,0 +1,13 @@
+{
+  "id": "15-queries-product-v2",
+  "title": "Custom Queries + Service — Product Search API",
+  "difficulty": "EASY",
+  "track": "Custom Queries",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild an enhanced Product API with search/filter capabilities.\n\n### Requirements\n\n- `Product` entity: `id` (Long), `name` (String), `category` (String), `price` (Double), `inStock` (Boolean), `brand` (String)\n- `ProductRepository` with custom finders:\n  - `findByCategory(String category)`\n  - `findByBrand(String brand)`\n  - `findByInStockTrue()`\n  - `findByPriceLessThanEqual(Double maxPrice)`\n- `ProductService`, `ProductController` at `/api/products`\n\n### Endpoints\n\n- `GET /api/products` → all (200)\n- `GET /api/products/{id}` → by ID (200 or 404)\n- `GET /api/products/category/{category}` → by category (200)\n- `GET /api/products/brand/{brand}` → by brand (200)\n- `GET /api/products/in-stock` → in-stock only (200)\n- `GET /api/products/max-price/{maxPrice}` → price <= maxPrice (200)\n- `POST /api/products` → create (201)\n- `PUT /api/products/{id}` → update (200 or 404)\n- `DELETE /api/products/{id}` → delete (204 or 404)",
+  "hints": [
+    "findByPriceLessThanEqual → WHERE price <= ?",
+    "findByInStockTrue → WHERE in_stock = true",
+    "Same approach as challenges 13 and 14"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "19-mock-clinic",
+  "title": "Mock Test 1 — Clinic Patient API",
+  "difficulty": "EASY",
+  "track": "Mock Assessment",
+  "testCount": 12,
+  "description": "### ⏱️ TIMED PRACTICE — 45 Minutes\n\nThis is a mock assessment. Try to complete it within 45 minutes.\n\n### Your Task\n\nBuild a Patient Management API from scratch using all patterns.\n\n### Requirements\n\n- `Patient` entity: `id` (Long), `firstName` (String), `lastName` (String), `age` (Integer), `condition` (String), `doctor` (String)\n- `PatientRequestDTO`: `firstName`, `lastName`, `age`, `condition`, `doctor`\n- `PatientResponseDTO`: `id`, `fullName` (firstName + \" \" + lastName), `age`, `condition`, `doctor`\n- `PatientRepository` with: `findByDoctor(String)`, `findByCondition(String)`\n- `PatientService`, `PatientController` at `/api/patients`\n\n### Endpoints\n\n- `GET /api/patients` → all (200)\n- `GET /api/patients/{id}` → by ID (200 or 404)\n- `GET /api/patients/doctor/{doctor}` → by doctor (200)\n- `GET /api/patients/condition/{condition}` → by condition (200)\n- `POST /api/patients` → create (201)\n- `PUT /api/patients/{id}` → update (200 or 404)\n- `DELETE /api/patients/{id}` → delete (204 or 404)\n\n### Remember\n\n- Entity + Repository + Service + DTO + Custom Queries\n- Computed field: fullName\n- Start your timer NOW! ⏱️",
+  "hints": ["No hints for mock tests! You should know this by now 💪"]
+}

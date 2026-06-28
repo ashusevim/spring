@@ -1,0 +1,8 @@
+com/springarena/controller/StudentController.class
+com/springarena/service/StudentServiceImpl.class
+com/springarena/model/Student.class
+com/springarena/dto/StudentResponseDTO.class
+com/springarena/repository/StudentRepository.class
+com/springarena/SpringArenaApplication.class
+com/springarena/service/StudentService.class
+com/springarena/dto/StudentRequestDTO.class

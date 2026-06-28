@@ -1,0 +1,9 @@
+{
+  "id": "17-full-course",
+  "title": "Full Pattern — Course API",
+  "difficulty": "EASY",
+  "track": "All Combined",
+  "testCount": 12,
+  "description": "### Your Task\n\nBuild a Course API using ALL patterns. Entity + Service + DTO + Custom Queries.\n\n### Requirements\n\n- `Course` entity: `id` (Long), `title` (String), `instructor` (String), `category` (String), `maxStudents` (Integer), `enrolledStudents` (Integer), `price` (Double)\n- `CourseRequestDTO`: `title`, `instructor`, `category`, `maxStudents`, `enrolledStudents`, `price`\n- `CourseResponseDTO`: `id`, `title`, `instructor`, `category`, `maxStudents`, `enrolledStudents`, `price`, `spotsLeft` (maxStudents - enrolledStudents — COMPUTED)\n- `CourseRepository` with: `findByCategory(String)`, `findByInstructor(String)`\n- `CourseService`, `CourseController` at `/api/courses`\n\n### Endpoints\n\n- `GET /api/courses` → all (200)\n- `GET /api/courses/{id}` → by ID (200 or 404)\n- `GET /api/courses/category/{category}` → by category (200)\n- `GET /api/courses/instructor/{instructor}` → by instructor (200)\n- `POST /api/courses` → create (201)\n- `PUT /api/courses/{id}` → update (200 or 404)\n- `DELETE /api/courses/{id}` → delete (204 or 404)",
+  "hints": ["spotsLeft = maxStudents - enrolledStudents"]
+}

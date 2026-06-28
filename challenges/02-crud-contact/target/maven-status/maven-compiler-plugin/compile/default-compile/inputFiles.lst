@@ -1,0 +1,6 @@
+/home/wanony/ashusevim/challenges/02-crud-contact/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/ashusevim/challenges/02-crud-contact/src/main/java/com/springarena/controller/ContactController.java
+/home/wanony/ashusevim/challenges/02-crud-contact/src/main/java/com/springarena/model/Contact.java
+/home/wanony/ashusevim/challenges/02-crud-contact/src/main/java/com/springarena/repository/ContactRepository.java
+/home/wanony/ashusevim/challenges/02-crud-contact/src/main/java/com/springarena/service/ContactService.java
+/home/wanony/ashusevim/challenges/02-crud-contact/src/main/java/com/springarena/service/ContactServiceImpl.java

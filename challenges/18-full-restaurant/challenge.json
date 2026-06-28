@@ -1,0 +1,9 @@
+{
+  "id": "18-full-restaurant",
+  "title": "Full Pattern — Restaurant Menu API",
+  "difficulty": "EASY",
+  "track": "All Combined",
+  "testCount": 12,
+  "description": "### Your Task\n\nBuild a Restaurant Menu API using ALL patterns.\n\n### Requirements\n\n- `MenuItem` entity: `id` (Long), `name` (String), `category` (String), `price` (Double), `vegetarian` (Boolean), `spiceLevel` (String)\n- `MenuItemRequestDTO`: `name`, `category`, `price`, `vegetarian`, `spiceLevel`\n- `MenuItemResponseDTO`: `id`, `name`, `category`, `price`, `vegetarian`, `spiceLevel`\n- `MenuItemRepository` with: `findByCategory(String)`, `findByVegetarianTrue()`\n- `MenuItemService`, `MenuItemController` at `/api/menu`\n\n### Endpoints\n\n- `GET /api/menu` → all (200)\n- `GET /api/menu/{id}` → by ID (200 or 404)\n- `GET /api/menu/category/{category}` → by category (200)\n- `GET /api/menu/vegetarian` → vegetarian items only (200)\n- `POST /api/menu` → create (201)\n- `PUT /api/menu/{id}` → update (200 or 404)\n- `DELETE /api/menu/{id}` → delete (204 or 404)",
+  "hints": ["Same full pattern. You've done this many times now!"]
+}

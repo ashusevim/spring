@@ -1,0 +1,12 @@
+{
+  "id": "09-service-gadget",
+  "title": "Service Layer — Gadget API",
+  "difficulty": "EASY",
+  "track": "Service Layer",
+  "testCount": 8,
+  "description": "### Your Task\n\nBuild a Gadget CRUD API with the 3-layer pattern. Third rep — should be muscle memory now.\n\n### Requirements\n\n- `Gadget` entity: `id` (Long), `name` (String), `brand` (String), `category` (String), `price` (Double), `available` (Boolean)\n- `GadgetRepository` extending `JpaRepository`\n- `GadgetService` with all CRUD methods\n- `GadgetController` at `/api/gadgets`\n\n### Endpoints\n\n- `GET /api/gadgets` → all (200)\n- `GET /api/gadgets/{id}` → by ID (200 or 404)\n- `POST /api/gadgets` → create (201)\n- `PUT /api/gadgets/{id}` → update (200 or 404)\n- `DELETE /api/gadgets/{id}` → delete (204 or 404)",
+  "hints": [
+    "By now you know the drill: @Service, constructor injection, 3 layers",
+    "Try to write this one without looking at the previous challenges"
+  ]
+}

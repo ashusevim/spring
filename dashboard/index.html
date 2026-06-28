@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Arena — Practice Spring Boot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo"><span class="logo-icon">🍃</span><h1>Spring Arena</h1></div>
+        <p class="tagline">Master Spring Boot CRUDs</p>
+      </div>
+      <div class="progress-card">
+        <div class="progress-ring-container">
+          <svg class="progress-ring" viewBox="0 0 100 100">
+            <circle class="progress-ring-bg" cx="50" cy="50" r="42"/>
+            <circle class="progress-ring-fill" cx="50" cy="50" r="42" id="progressRing"/>
+          </svg>
+          <span class="progress-text" id="progressText">0%</span>
+        </div>
+        <div class="progress-stats"><span id="solvedCount">0</span> / <span id="totalCount">0</span> solved</div>
+      </div>
+      <nav id="challengeList" class="challenge-nav"></nav>
+    </aside>
+    <main id="mainContent">
+      <div id="landingPage" class="landing">
+        <div class="landing-hero">
+          <h2>Welcome to <span class="gradient-text">Spring Arena</span></h2>
+          <p>Practice Spring Boot CRUD like HackerRank. Pre-written tests — write code to make them pass.</p>
+          <div class="how-it-works">
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><h4>Pick a Challenge</h4></div>
+              <div class="step"><div class="step-num">2</div><h4>Read Tests</h4></div>
+              <div class="step"><div class="step-num">3</div><h4>Write Code</h4></div>
+              <div class="step"><div class="step-num">4</div><h4>Run Tests</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="challengePage" class="challenge-detail" style="display:none">
+        <div class="challenge-header">
+          <div class="challenge-title-row">
+            <span class="difficulty-badge" id="chDifficulty">EASY</span>
+            <h2 id="chTitle">Challenge Title</h2>
+          </div>
+          <div class="challenge-meta">
+            <span class="meta-tag" id="chTrack">Track</span>
+            <span class="meta-tag" id="chTestCount">0 tests</span>
+          </div>
+        </div>
+        <div class="challenge-body">
+          <div class="description-panel">
+            <div class="panel-tabs">
+              <button class="tab active" data-tab="description">📋 Description</button>
+              <button class="tab" data-tab="tests">🧪 Tests</button>
+              <button class="tab" data-tab="skeleton">📝 Skeleton</button>
+              <button class="tab" data-tab="hints">💡 Hints</button>
+            </div>
+            <div class="tab-content active" id="tab-description"><div id="chDescription" class="markdown-body"></div></div>
+            <div class="tab-content" id="tab-tests"><div id="chTests" class="code-viewer"></div></div>
+            <div class="tab-content" id="tab-skeleton"><div id="chSkeleton" class="code-viewer"></div></div>
+            <div class="tab-content" id="tab-hints"><div id="chHints" class="hints-list"></div></div>
+          </div>
+          <div class="results-panel">
+            <div class="run-section">
+              <button id="runTestsBtn" class="btn-run" onclick="gradeChallenge()"><span class="btn-icon">▶</span> Run Tests</button>
+              <p class="run-hint">or run <code>mvn test</code> in the challenge directory</p>
+            </div>
+            <div id="resultsArea" class="results-area">
+              <div class="results-placeholder"><span class="placeholder-icon">🎯</span><p>Write your solution, then hit <strong>Run Tests</strong></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

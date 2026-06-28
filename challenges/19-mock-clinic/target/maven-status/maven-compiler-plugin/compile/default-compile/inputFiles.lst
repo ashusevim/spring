@@ -1,0 +1,8 @@
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/controller/PatientController.java
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/dto/PatientRequestDTO.java
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/dto/PatientResponseDTO.java
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/model/Patient.java
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/repository/PatientRepository.java
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/service/PatientService.java
+/home/wanony/ashusevim/challenges/19-mock-clinic/src/main/java/com/springarena/service/PatientServiceImpl.java

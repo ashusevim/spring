@@ -1,0 +1,13 @@
+{
+  "id": "14-queries-job",
+  "title": "Custom Queries + Service — Job Listing API",
+  "difficulty": "EASY",
+  "track": "Custom Queries",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild a Job Listing API with service layer and custom queries.\n\n### Requirements\n\n- `Job` entity: `id` (Long), `title` (String), `company` (String), `location` (String), `salary` (Double), `remote` (Boolean)\n- `JobRepository` with custom finders:\n  - `findByCompany(String company)` → List<Job>\n  - `findByLocation(String location)` → List<Job>\n  - `findByRemoteTrue()` → List<Job>\n  - `findBySalaryGreaterThanEqual(Double minSalary)` → List<Job>\n- `JobService` with CRUD + query methods\n- `JobController` at `/api/jobs`\n\n### Endpoints\n\n- `GET /api/jobs` → all (200)\n- `GET /api/jobs/{id}` → by ID (200 or 404)\n- `GET /api/jobs/company/{company}` → by company (200)\n- `GET /api/jobs/location/{location}` → by location (200)\n- `GET /api/jobs/remote` → remote jobs only (200)\n- `GET /api/jobs/salary/{minSalary}` → jobs with salary >= minSalary (200)\n- `POST /api/jobs` → create (201)\n- `PUT /api/jobs/{id}` → update (200 or 404)\n- `DELETE /api/jobs/{id}` → delete (204 or 404)",
+  "hints": [
+    "findBySalaryGreaterThanEqual → WHERE salary >= ?",
+    "Service layer handles both CRUD and custom query delegation",
+    "findByRemoteTrue → WHERE remote = true"
+  ]
+}

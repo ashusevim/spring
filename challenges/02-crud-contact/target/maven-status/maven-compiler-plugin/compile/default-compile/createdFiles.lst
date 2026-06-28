@@ -1,0 +1,6 @@
+com/springarena/repository/ContactRepository.class
+com/springarena/service/ContactServiceImpl.class
+com/springarena/model/Contact.class
+com/springarena/service/ContactService.class
+com/springarena/SpringArenaApplication.class
+com/springarena/controller/ContactController.class

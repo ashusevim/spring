@@ -1,0 +1,14 @@
+{
+  "id": "02-crud-contact",
+  "title": "Basic CRUD — Contact API",
+  "difficulty": "EASY",
+  "track": "CRUD Fundamentals",
+  "testCount": 8,
+  "description": "### Your Task\n\nBuild a complete REST API for managing Contacts. Same pattern as Challenge 01 — different domain.\n\n### Requirements\n\n- Create a `Contact` entity with fields: `id` (Long, auto-generated), `firstName` (String), `lastName` (String), `email` (String), `phone` (String)\n- Create a `ContactRepository` extending `JpaRepository`\n- Create a `ContactController` at `/api/contacts` with CRUD endpoints\n\n### Endpoints\n\n- `GET /api/contacts` → Return all contacts (200 OK)\n- `GET /api/contacts/{id}` → Return contact by ID (200 OK, or 404 if not found)\n- `POST /api/contacts` → Create contact (201 Created)\n- `PUT /api/contacts/{id}` → Update contact (200 OK, or 404 if not found)\n- `DELETE /api/contacts/{id}` → Delete contact (204 No Content, or 404 if not found)\n\n### Key Concepts\n\n- `@Entity`, `@Id`, `@GeneratedValue`\n- `@RestController`\n- `@GetMapping`, `@PostMapping`, `@PutMapping`, `@DeleteMapping`\n- `@PathVariable`, `@RequestBody`\n- `ResponseEntity` with proper HTTP status codes",
+  "hints": [
+    "Use @GeneratedValue(strategy = GenerationType.IDENTITY) for auto-incrementing IDs",
+    "Use @RequestBody on POST and PUT method parameters to deserialize JSON",
+    "ResponseEntity.status(HttpStatus.CREATED).body(saved) returns 201",
+    "ResponseEntity.noContent().build() returns 204 with no body"
+  ]
+}

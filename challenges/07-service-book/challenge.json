@@ -1,0 +1,14 @@
+{
+  "id": "07-service-book",
+  "title": "Service Layer — Book API",
+  "difficulty": "EASY",
+  "track": "Service Layer",
+  "testCount": 8,
+  "description": "### Your Task\n\nBuild a Book CRUD API with a proper 3-layer architecture: Controller → Service → Repository.\n\n### Why Service Layer?\n\nIn real projects and assessments, the controller should NEVER call the repository directly. The service layer contains business logic and acts as a bridge.\n\n### Requirements\n\n- `Book` entity: `id` (Long), `title` (String), `author` (String), `genre` (String), `price` (Double), `inStock` (Boolean)\n- `BookRepository` extending `JpaRepository`\n- `BookService` with all CRUD methods (the controller calls this, NOT the repo)\n- `BookController` at `/api/books`\n\n### Endpoints\n\n- `GET /api/books` → Return all books (200)\n- `GET /api/books/{id}` → Return book by ID (200 or 404)\n- `POST /api/books` → Create book (201)\n- `PUT /api/books/{id}` → Update book (200 or 404)\n- `DELETE /api/books/{id}` → Delete book (204 or 404)\n\n### Key Concepts\n\n- `@Service` annotation on the service class\n- Controller injects the Service, NOT the Repository\n- Service injects the Repository\n- Same CRUD, just properly layered",
+  "hints": [
+    "Use @Service on BookService class",
+    "Inject BookRepository into BookService via constructor",
+    "Inject BookService into BookController via constructor",
+    "The controller should NEVER have a reference to the repository"
+  ]
+}

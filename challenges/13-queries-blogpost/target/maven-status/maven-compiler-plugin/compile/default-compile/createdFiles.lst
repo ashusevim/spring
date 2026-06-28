@@ -1,0 +1,6 @@
+com/springarena/service/BlogPostServiceImpl.class
+com/springarena/controller/BlogPostController.class
+com/springarena/service/BlogPostService.class
+com/springarena/repository/BlogPostRepository.class
+com/springarena/model/BlogPost.class
+com/springarena/SpringArenaApplication.class

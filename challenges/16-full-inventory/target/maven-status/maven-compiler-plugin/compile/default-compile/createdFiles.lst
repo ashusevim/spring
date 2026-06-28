@@ -1,0 +1,8 @@
+com/springarena/dto/InventoryRequestDTO.class
+com/springarena/dto/InventoryResponseDTO.class
+com/springarena/service/InventoryService.class
+com/springarena/controller/InventoryController.class
+com/springarena/service/InventoryServiceImpl.class
+com/springarena/repository/InventoryRepository.class
+com/springarena/SpringArenaApplication.class
+com/springarena/model/InventoryItem.class

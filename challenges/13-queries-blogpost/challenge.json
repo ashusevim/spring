@@ -1,0 +1,13 @@
+{
+  "id": "13-queries-blogpost",
+  "title": "Custom Queries — Blog Post API",
+  "difficulty": "EASY",
+  "track": "Custom Queries",
+  "testCount": 8,
+  "description": "### Your Task\n\nBuild a Blog Post CRUD API with custom repository finder methods.\n\n### Requirements\n\n- `BlogPost` entity: `id` (Long), `title` (String), `content` (String), `author` (String), `category` (String), `published` (Boolean)\n- `BlogPostRepository` with custom finders:\n  - `findByAuthor(String author)` → List<BlogPost>\n  - `findByCategory(String category)` → List<BlogPost>\n  - `findByPublishedTrue()` → List<BlogPost>\n- `BlogPostController` at `/api/posts`\n\n### Endpoints\n\n- `GET /api/posts` → all posts (200)\n- `GET /api/posts/{id}` → by ID (200 or 404)\n- `GET /api/posts/author/{author}` → posts by author (200)\n- `GET /api/posts/category/{category}` → posts by category (200)\n- `GET /api/posts/published` → only published posts (200)\n- `POST /api/posts` → create (201)\n- `PUT /api/posts/{id}` → update (200 or 404)\n- `DELETE /api/posts/{id}` → delete (204 or 404)\n\n### Key Concepts\n\n- Spring Data JPA derived query methods — just name the method correctly!\n- `findByAuthor` → Spring auto-generates the SQL WHERE clause\n- No @Query annotation needed for simple finders",
+  "hints": [
+    "Spring Data generates queries from method names: findByAuthor → WHERE author = ?",
+    "findByPublishedTrue → WHERE published = true",
+    "These are just interface methods — no implementation needed"
+  ]
+}

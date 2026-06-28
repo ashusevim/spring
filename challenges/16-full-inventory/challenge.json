@@ -1,0 +1,13 @@
+{
+  "id": "16-full-inventory",
+  "title": "Full Pattern — Inventory API",
+  "difficulty": "EASY",
+  "track": "All Combined",
+  "testCount": 12,
+  "description": "### Your Task\n\nBuild an Inventory API using ALL patterns: Entity + Service + DTO + Custom Queries.\n\n### Requirements\n\n- `InventoryItem` entity: `id` (Long), `name` (String), `category` (String), `quantity` (Integer), `unitPrice` (Double), `supplier` (String)\n- `InventoryRequestDTO`: `name`, `category`, `quantity`, `unitPrice`, `supplier`\n- `InventoryResponseDTO`: `id`, `name`, `category`, `quantity`, `unitPrice`, `supplier`, `totalValue` (quantity × unitPrice — COMPUTED)\n- `InventoryRepository` with: `findByCategory(String)`, `findBySupplier(String)`\n- `InventoryService` handles CRUD + DTO mapping + queries\n- `InventoryController` at `/api/inventory`\n\n### Endpoints\n\n- `GET /api/inventory` → List of ResponseDTO (200)\n- `GET /api/inventory/{id}` → ResponseDTO (200 or 404)\n- `GET /api/inventory/category/{category}` → filter by category (200)\n- `GET /api/inventory/supplier/{supplier}` → filter by supplier (200)\n- `POST /api/inventory` → create (201)\n- `PUT /api/inventory/{id}` → update (200 or 404)\n- `DELETE /api/inventory/{id}` → delete (204 or 404)",
+  "hints": [
+    "totalValue = quantity * unitPrice — compute in service during entity → DTO mapping",
+    "This combines everything from challenges 01-15",
+    "Entity + Repository + Service + DTO + Custom Queries"
+  ]
+}

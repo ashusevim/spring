@@ -1,0 +1,12 @@
+{
+  "id": "12-service-dto-event",
+  "title": "Service + DTO — Event API",
+  "difficulty": "EASY",
+  "track": "Service + DTO",
+  "testCount": 10,
+  "description": "### Your Task\n\nBuild an Event CRUD API with Service + DTO. This one has a computed field in the response.\n\n### Requirements\n\n- `Event` entity: `id` (Long), `name` (String), `location` (String), `startTime` (String), `endTime` (String), `organizer` (String)\n- `EventRequestDTO`: `name`, `location`, `startTime`, `endTime`, `organizer`\n- `EventResponseDTO`: `id`, `name`, `location`, `schedule` (startTime + \" to \" + endTime), `organizer`\n- `EventRepository`, `EventService`, `EventController` at `/api/events`\n\n### Endpoints\n\n- `GET /api/events` → List of EventResponseDTO (200)\n- `GET /api/events/{id}` → EventResponseDTO (200 or 404)\n- `POST /api/events` → Accept EventRequestDTO, return EventResponseDTO (201)\n- `PUT /api/events/{id}` → Accept EventRequestDTO, return EventResponseDTO (200 or 404)\n- `DELETE /api/events/{id}` → 204 or 404\n\n### Key Concepts\n\n- Computed field: `schedule` = startTime + \" to \" + endTime\n- Example: startTime=\"10:00 AM\", endTime=\"2:00 PM\" → schedule=\"10:00 AM to 2:00 PM\"",
+  "hints": [
+    "schedule = startTime + ' to ' + endTime — compute it in the service during mapping",
+    "startTime and endTime are stored separately in the entity but combined in the response"
+  ]
+}

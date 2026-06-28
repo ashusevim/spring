@@ -1,0 +1,8 @@
+com/springarena/model/StockItem.class
+com/springarena/service/StockItemService.class
+com/springarena/service/StockItemServiceImpl.class
+com/springarena/dto/StockItemRequestDTO.class
+com/springarena/dto/StockItemResponseDTO.class
+com/springarena/controller/StockItemController.class
+com/springarena/repository/StockItemRepository.class
+com/springarena/SpringArenaApplication.class

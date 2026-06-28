@@ -1,0 +1,8 @@
+com/springarena/dto/VehicleResponseDTO.class
+com/springarena/dto/VehicleRequestDTO.class
+com/springarena/repository/VehicleRepository.class
+com/springarena/controller/VehicleController.class
+com/springarena/service/VehicleService.class
+com/springarena/service/VehicleServiceImpl.class
+com/springarena/SpringArenaApplication.class
+com/springarena/model/Vehicle.class
