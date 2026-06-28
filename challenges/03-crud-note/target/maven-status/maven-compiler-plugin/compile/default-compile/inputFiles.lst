@@ -1,6 +1,6 @@
-/home/wanony/ashusevim/challenges/03-crud-note/src/main/java/com/springarena/SpringArenaApplication.java
-/home/wanony/ashusevim/challenges/03-crud-note/src/main/java/com/springarena/controller/NoteController.java
-/home/wanony/ashusevim/challenges/03-crud-note/src/main/java/com/springarena/model/Note.java
-/home/wanony/ashusevim/challenges/03-crud-note/src/main/java/com/springarena/repository/NoteRepository.java
-/home/wanony/ashusevim/challenges/03-crud-note/src/main/java/com/springarena/service/NoteService.java
-/home/wanony/ashusevim/challenges/03-crud-note/src/main/java/com/springarena/service/NoteServiceImpl.java
+/home/wanony/projects/spring/challenges/03-crud-note/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/projects/spring/challenges/03-crud-note/src/main/java/com/springarena/controller/NoteController.java
+/home/wanony/projects/spring/challenges/03-crud-note/src/main/java/com/springarena/model/Note.java
+/home/wanony/projects/spring/challenges/03-crud-note/src/main/java/com/springarena/repository/NoteRepository.java
+/home/wanony/projects/spring/challenges/03-crud-note/src/main/java/com/springarena/service/NoteService.java
+/home/wanony/projects/spring/challenges/03-crud-note/src/main/java/com/springarena/service/NoteServiceImpl.java

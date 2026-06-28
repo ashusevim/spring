@@ -1,8 +1,8 @@
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/SpringArenaApplication.java
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/controller/EmployeeController.java
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/dto/EmployeeRequestDTO.java
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/dto/EmployeeResponseDTO.java
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/model/Employee.java
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/repository/EmployeeRepository.java
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/service/EmployeeService.java
-/home/wanony/ashusevim/challenges/04-dto-employee/src/main/java/com/springarena/service/EmployeeServiceImpl.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/controller/EmployeeController.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/dto/EmployeeRequestDTO.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/dto/EmployeeResponseDTO.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/model/Employee.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/repository/EmployeeRepository.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/service/EmployeeService.java
+/home/wanony/projects/spring/challenges/04-dto-employee/src/main/java/com/springarena/service/EmployeeServiceImpl.java

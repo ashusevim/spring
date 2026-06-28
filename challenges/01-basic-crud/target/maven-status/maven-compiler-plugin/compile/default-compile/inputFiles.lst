@@ -1,6 +1,6 @@
-/home/wanony/ashusevim/challenges/01-basic-crud/src/main/java/com/springarena/SpringArenaApplication.java
-/home/wanony/ashusevim/challenges/01-basic-crud/src/main/java/com/springarena/controller/ProductController.java
-/home/wanony/ashusevim/challenges/01-basic-crud/src/main/java/com/springarena/model/Product.java
-/home/wanony/ashusevim/challenges/01-basic-crud/src/main/java/com/springarena/repository/ProductRepository.java
-/home/wanony/ashusevim/challenges/01-basic-crud/src/main/java/com/springarena/service/ProductService.java
-/home/wanony/ashusevim/challenges/01-basic-crud/src/main/java/com/springarena/service/ProductServiceImpl.java
+/home/wanony/projects/spring/challenges/01-basic-crud/src/main/java/com/springarena/SpringArenaApplication.java
+/home/wanony/projects/spring/challenges/01-basic-crud/src/main/java/com/springarena/controller/ProductController.java
+/home/wanony/projects/spring/challenges/01-basic-crud/src/main/java/com/springarena/model/Product.java
+/home/wanony/projects/spring/challenges/01-basic-crud/src/main/java/com/springarena/repository/ProductRepository.java
+/home/wanony/projects/spring/challenges/01-basic-crud/src/main/java/com/springarena/service/ProductService.java
+/home/wanony/projects/spring/challenges/01-basic-crud/src/main/java/com/springarena/service/ProductServiceImpl.java

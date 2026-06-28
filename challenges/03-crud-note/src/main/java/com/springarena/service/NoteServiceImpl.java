@@ -40,16 +40,27 @@ public class NoteServiceImpl implements NoteService {
         // TODO: Update a note
         Optional<Note> foundNote = noteRepository.findById(id);
 
-        foundNote.setId(note.getId());
-        foundNote.setTitle(note.getTitle());
-        foundNote.setContent(note.getContent());
-        foundNote.set
-        return Optional.empty();
+        if (foundNote.isPresent()) {
+            foundNote.get().setId(note.getId());
+            foundNote.get().setTitle(note.getTitle());
+            foundNote.get().setContent(note.getContent());
+            foundNote.get().setAuthor(note.getAuthor());
+            foundNote.get().setPinned(note.isPinned());
+            return foundNote;
+        } else {
+            return Optional.empty();
+        }
+
     }
 
     @Override
     public boolean deleteNote(Long id) {
         // TODO: Delete a note and return true if existed, false otherwise
+        Optional<Note> note = noteRepository.findById(id);
+        if (note.isPresent()) {
+            noteRepository.delete(note.get());
+            return true;
+        }
         return false;
     }
 }
